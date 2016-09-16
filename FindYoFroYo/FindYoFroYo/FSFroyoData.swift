@@ -44,6 +44,6 @@ class FoursquareData: NSObject {
         placeName = name
         placeAddress = addressStringConverter
         placeIdentifier = identifier
-        placePhotoURL = ATConstants.Endpoints.FOURSQUARE_GET_PHOTO.stringByReplacingOccurrencesOfString("%@", withString: placeIdentifier)
+        placePhotoURL = FoursquareKeys.getPhoto.stringByReplacingOccurrencesOfString("%@", withString: placeIdentifier)
     }
 }
