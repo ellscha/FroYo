@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class FoursquareData: NSObject {
+class FSFroyoData: NSObject {
     
     var placeIdentifier: String
     var placeVenue: [String : JSON]

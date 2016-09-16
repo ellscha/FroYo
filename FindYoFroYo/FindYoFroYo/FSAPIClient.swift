@@ -17,7 +17,7 @@ struct FoursquareConstants {
 }
 
 
-class FoursquareAPIClient {
+class FSAPIClient {
     
     class func getQueryForSearchLandmarks(parameter: [String: String], completion: (JSON?, ErrorType?) -> ()) {
         

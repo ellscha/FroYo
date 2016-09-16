@@ -26,7 +26,7 @@ class FSDataStore {
                          "ll": "\(centerPoint.coordinate.latitude), \(centerPoint.coordinate.longitude)",
                          "categoryId": FoursquareKeys.froyoID]
         
-        FoursquareAPIClient.getQueryForSearchLandmarks(parameter) { itemsJSON in
+        FSAPIClient.getQueryForSearchLandmarks(parameter) { itemsJSON in
             guard let itemsArray = itemsJSON.0?.dictionary!["venues"]?.array else {
                 print("error: no data recieved from API Client")
                 completion(false)
@@ -34,7 +34,7 @@ class FSDataStore {
             }
             
             for venue in itemsArray {
-                self.foursquareData.insert(FoursquareData(json: venue))
+                self.FSFroyoData.insert(FoursquareData(json: venue))
             }
             completion(true)
         }
