@@ -1,0 +1,6 @@
+framework module Pods_FindYoFroYo {
+  umbrella header "Pods-FindYoFroYo-umbrella.h"
+
+  export *
+  module * { export * }
+}

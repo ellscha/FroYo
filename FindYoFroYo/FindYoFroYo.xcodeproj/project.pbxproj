@@ -16,6 +16,9 @@
 		4D2577E91D8AF7C300B9D97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2577E71D8AF7C300B9D97F /* LaunchScreen.storyboard */; };
 		4D2577F11D8AF9E300B9D97F /* testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2577F01D8AF9E300B9D97F /* testfile.swift */; };
 		4D2577F31D8C1A3A00B9D97F /* FSAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2577F21D8C1A3A00B9D97F /* FSAPIClient.swift */; };
+		4D2577F51D8C1C7800B9D97F /* FSDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2577F41D8C1C7800B9D97F /* FSDataStore.swift */; };
+		4D2577F71D8C1C9E00B9D97F /* FSFroyoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2577F61D8C1C9E00B9D97F /* FSFroyoData.swift */; };
+		97C69AA41C9FCAE443AA15A3 /* Pods_FindYoFroYo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE05D3482FEC78ED22E115 /* Pods_FindYoFroYo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		4D2577EA1D8AF7C300B9D97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2577F01D8AF9E300B9D97F /* testfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testfile.swift; sourceTree = "<group>"; };
 		4D2577F21D8C1A3A00B9D97F /* FSAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAPIClient.swift; sourceTree = "<group>"; };
+		4D2577F41D8C1C7800B9D97F /* FSDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSDataStore.swift; sourceTree = "<group>"; };
+		4D2577F61D8C1C9E00B9D97F /* FSFroyoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFroyoData.swift; sourceTree = "<group>"; };
+		4EF227E90F3EB0EB80DC8C53 /* Pods-FindYoFroYo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindYoFroYo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindYoFroYo/Pods-FindYoFroYo.debug.xcconfig"; sourceTree = "<group>"; };
+		54EAB18F39A9D2D497FBC82D /* Pods-FindYoFroYo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindYoFroYo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindYoFroYo/Pods-FindYoFroYo.release.xcconfig"; sourceTree = "<group>"; };
+		5EAE05D3482FEC78ED22E115 /* Pods_FindYoFroYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindYoFroYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C69AA41C9FCAE443AA15A3 /* Pods_FindYoFroYo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +58,8 @@
 				4D2577F01D8AF9E300B9D97F /* testfile.swift */,
 				4D2577D91D8AF7C300B9D97F /* FindYoFroYo */,
 				4D2577D81D8AF7C300B9D97F /* Products */,
+				C26D6D6F97097D60C25B4951 /* Pods */,
+				504EFA45DB37E4F94209F668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +83,27 @@
 				4D2577E71D8AF7C300B9D97F /* LaunchScreen.storyboard */,
 				4D2577EA1D8AF7C300B9D97F /* Info.plist */,
 				4D2577F21D8C1A3A00B9D97F /* FSAPIClient.swift */,
+				4D2577F61D8C1C9E00B9D97F /* FSFroyoData.swift */,
+				4D2577F41D8C1C7800B9D97F /* FSDataStore.swift */,
 			);
 			path = FindYoFroYo;
+			sourceTree = "<group>";
+		};
+		504EFA45DB37E4F94209F668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE05D3482FEC78ED22E115 /* Pods_FindYoFroYo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C26D6D6F97097D60C25B4951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF227E90F3EB0EB80DC8C53 /* Pods-FindYoFroYo.debug.xcconfig */,
+				54EAB18F39A9D2D497FBC82D /* Pods-FindYoFroYo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D2577ED1D8AF7C300B9D97F /* Build configuration list for PBXNativeTarget "FindYoFroYo" */;
 			buildPhases = (
+				9F4C62E345D618E684AAC110 /* [CP] Check Pods Manifest.lock */,
 				4D2577D31D8AF7C300B9D97F /* Sources */,
 				4D2577D41D8AF7C300B9D97F /* Frameworks */,
 				4D2577D51D8AF7C300B9D97F /* Resources */,
+				6F95A95954C667F30707277B /* [CP] Embed Pods Frameworks */,
+				234C5DD4BB9ED6F3CFB68996 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,16 +175,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		234C5DD4BB9ED6F3CFB68996 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindYoFroYo/Pods-FindYoFroYo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F95A95954C667F30707277B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindYoFroYo/Pods-FindYoFroYo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4C62E345D618E684AAC110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D2577D31D8AF7C300B9D97F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2577F51D8C1C7800B9D97F /* FSDataStore.swift in Sources */,
 				4D2577DD1D8AF7C300B9D97F /* RootViewController.swift in Sources */,
 				4D2577F11D8AF9E300B9D97F /* testfile.swift in Sources */,
 				4D2577E11D8AF7C300B9D97F /* ModelController.swift in Sources */,
 				4D2577DF1D8AF7C300B9D97F /* DataViewController.swift in Sources */,
 				4D2577F31D8C1A3A00B9D97F /* FSAPIClient.swift in Sources */,
+				4D2577F71D8C1C9E00B9D97F /* FSFroyoData.swift in Sources */,
 				4D2577DB1D8AF7C300B9D97F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +346,7 @@
 		};
 		4D2577EE1D8AF7C300B9D97F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF227E90F3EB0EB80DC8C53 /* Pods-FindYoFroYo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FindYoFroYo/Info.plist;
@@ -274,6 +358,7 @@
 		};
 		4D2577EF1D8AF7C300B9D97F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54EAB18F39A9D2D497FBC82D /* Pods-FindYoFroYo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FindYoFroYo/Info.plist;
@@ -302,6 +387,7 @@
 				4D2577EF1D8AF7C300B9D97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
