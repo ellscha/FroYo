@@ -40,6 +40,7 @@ class FSDataStore {
             completion(true)
         }
     }
+}
 //    
 //    var totalDistance: Double {
 //        return origin.distanceFromLocation(destination)
