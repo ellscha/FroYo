@@ -24,7 +24,6 @@ class FSDataStore {
                          "v": "20160826",
                          "intent": "browse",
                          "ll": "\(centerPoint.coordinate.latitude), \(centerPoint.coordinate.longitude)",
-                         "radius": "\(searchRadius)",
                          "categoryId": FoursquareKeys.froyoID]
         
         FoursquareAPIClient.getQueryForSearchLandmarks(parameter) { itemsJSON in
